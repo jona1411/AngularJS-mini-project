@@ -2,20 +2,22 @@
 <html lang="da" ng-app="absenceList">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-  <style>
-    .heading,h1 {
-      text-align: center;
-    }
-  </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <style>
+        .heading,h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body ng-controller="StudentsController">
+
+
 <h1>fravær</h1>
-  <h1 class="heading" ng-repeat="student in studentList" ng-hide="student.absence"> {{student.name}} - {{student.absence}}</h1><br>
+<h1 class="heading" ng-repeat="student in studentList" ng-hide="student.absence"> {{student.name}} - {{student.absence}}</h1><br>
 <h1>til stede</h1>
-  <h1 class="heading" ng-repeat="student in studentList" ng-show="student.absence"> {{student.name}} - {{student.absence}}</h1>
+<h1 class="heading" ng-repeat="student in studentList" ng-show="student.absence"> {{student.name}} - {{student.absence}}</h1>
 
 
 </body>
